@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="/hello">
+        <div>
+            <label for="Username">Username :</label>
+            <input type="text" placeholder="Enter Username" id="Username" name="user">
+            <br>
+        </div>
+        <div>
+            <label for="password">Password :</label>
+            <input type="password" placeholder="Enter Password" id="password" name="pass"><br>
+        </div>
+        <button>Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <label for="Search">Search Directly on Google <br></label>
+        <input type="text"placeholder="Search on Google"name="q" id="Search">
+        <button>Search</button>
+    </form>
+    <form action="/backend">
+        
+        <input type="checkbox" id="age" name="age" checked>
+        <label for="age">I am 18+</label>
+        <div>
+            <caption>Select Gender :</caption>
+            <input type="radio"id="Male" name="Gender" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio"id="Female" name="Gender" value="Female">
+            <label for="Female">Female</label>
+            <br>
+            Select Your Current Occupation : 
+            <select name="profession" id="profession">
+                <option value="dev">Developer</option>
+                <option value="Student">Student</option>
+            </select>
+            <br>
+            Select your income :
+            <input type="range" name="income" id="income" min="10000" max="1000000000" step="60000000" value="1000000">
+            <label for="income"></label>
+            <button>Submit</button>
+        </div>
+        <label for="feedback">Please share your feedback here :</label>
+        <br>
+        <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+    </form>
+    </body>
+</html>
